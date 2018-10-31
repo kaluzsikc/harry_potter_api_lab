@@ -8,7 +8,7 @@ const HpList = (props) => {
     })
 
     return(
-        <div>
+        <div className="hp-list">
            {characters}
         </div>
     )

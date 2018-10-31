@@ -33,6 +33,7 @@ class HpContainer extends Component{
         console.log("characters: ", this.state.characters);
         return( 
             <div>
+                <h1>Harry Potter Characters</h1>
                 <HpSelect characterList={this.props.characterList} handleSelect = {this.handleSelect} />
                 <HpList characters={this.state.characters}/>
             </div>

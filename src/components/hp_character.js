@@ -41,10 +41,10 @@ const HpCharacter = (props) => {
    
 
     return(
-        <div>
-            <img src={img} alt="character imagine" width="100px" height="150px" />   
+        <div className="hp-character">
+            <img src={img} alt="character imagine" width="200px" height="300px" />   
             <ul>
-                <li><h2>Name: {name}</h2></li>
+                <h2>{name}</h2>
                 <li>Species: {species}</li>
                 <li>Gendre: {gender}</li>
                 <li>DOB: {dob}</li>
