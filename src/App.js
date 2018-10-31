@@ -8,7 +8,10 @@ class App extends Component {
       { name: "All", url: "http://hp-api.herokuapp.com/api/characters" },
       { name: "Students", url: "http://hp-api.herokuapp.com/api/characters/students" },
       { name: "Staff", url: "http://hp-api.herokuapp.com/api/characters/staff" },
-      { name: "House", url: "http://hp-api.herokuapp.com/api/characters/house/:house" }
+      { name: "Gryffindor", url: "http://hp-api.herokuapp.com/api/characters/house/gryffindor" },
+      { name: "Hufflepuff", url: "http://hp-api.herokuapp.com/api/characters/house/hufflepuff" },
+      { name: "Slytherin", url: "http://hp-api.herokuapp.com/api/characters/house/slytherin" },
+      { name: "Ravenclaw", url: "http://hp-api.herokuapp.com/api/characters/house/ravenclaw" }
     ]
 
     return (
