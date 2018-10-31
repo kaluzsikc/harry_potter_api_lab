@@ -13,4 +13,5 @@ Remember to have a container and component folder. Containers will handle data r
 E.g. List all of the characters and click to see more info. You could extend this by filtering by Hogwarts House.
 
 
-![Screenshot of Harry Potter app](<img width="1435" alt="screenshot 2018-10-31 at 14 55 43" src="https://user-images.githubusercontent.com/38946410/47796915-33581200-dd1d-11e8-9aed-f68b93e77d13.png">)
+
+![Screenshot of Harry Potter app]("https://user-images.githubusercontent.com/38946410/47796915-33581200-dd1d-11e8-9aed-f68b93e77d13.png")
