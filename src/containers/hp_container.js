@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import HpList from '../components/hp_list';
 
 class HpContainer extends Component{
 
@@ -25,12 +26,10 @@ class HpContainer extends Component{
     }
 
     render(){
-        console.log(this.state.characters);
+        console.log("characters: ", this.state.characters);
         return( 
             <div>
-                <p>
-                    Test Hp HpContainer
-                </p>
+                <HpList characters={this.state.characters}/>
             </div>
         )
 
