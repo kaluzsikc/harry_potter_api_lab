@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import HpList from '../components/hp_list';
+import HpSelect from '../components/hp_select';
 
 class HpContainer extends Component{
 
@@ -7,10 +8,9 @@ class HpContainer extends Component{
         super(props);
         this.state = {
             characters:[],
-            url: "http://hp-api.herokuapp.com/api/characters"
         }
 
-        //bind
+        this.handleSelect = this.handleSelect.bind(this);
     }
 
     request(url){
@@ -21,14 +21,19 @@ class HpContainer extends Component{
     }
 
     componentDidMount(){
-        this.request(this.state.url)
+        this.request(this.props.characterList[0].url)
        
+    }
+
+    handleSelect(url) {
+        this.request(url);
     }
 
     render(){
         console.log("characters: ", this.state.characters);
         return( 
             <div>
+                <HpSelect characterList={this.props.characterList} handleSelect = {this.handleSelect} />
                 <HpList characters={this.state.characters}/>
             </div>
         )
